@@ -9,6 +9,7 @@
     <meta name="author" content="Sidney Alves">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
+
     <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -23,7 +24,7 @@
             <nav class="menu-desktop">
                 <ul>
                     <li><a href="">Home</a></li>
-                    <li><a href="">Sobre</a></li>
+                    <li><a href="">tecnologias</a></li>
                     <li><a href="">Contato</a></li>
                 </ul>
             </nav>
@@ -31,7 +32,7 @@
                 <i class="fa fa-bars" aria-hidden="true"></i>
                 <ul>
                     <li><a href="">Home</a></li>
-                    <li><a href="">Sobre</a></li>
+                    <li><a href="">tecnologia</a></li>
                     <li><a href="">Contato</a></li>
                 </ul>
             </nav>
@@ -53,33 +54,77 @@
         <!--terminando menu e header-->
         <!--construindo a parte de tecnoligias-->
         <section class="tols">
+
             <div class="title-tols">
-
+                <div class="container">
+                    <h2>Tecnologia</h2>
+                </div>
             </div>
-            <div class="container">
+            <section class="box-tols">
+                <div class="container">
+                    <div class="box-tols-single">
+                        <div class="box-tols-wraper">
+                            <h2>HTML5</h2>
+                            <div class="logo-tols">
+                                <i style="color: rgb(221, 120, 25);" class="fa fa-html5" aria-hidden="true"></i>
+                            </div>
+                            <div class="disc-tols">
 
-            </div>
-        </section>
-        <!--teminado a parte de tecnologia-->
-        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous">
-        </script>
-        <script type="text/javascript">
-            $(function() {
+                                <p><i class="fa fa-check-square"></i> HTML5 é uma linguagem de marcação usada para estruturar e apresentar conteúdo na World Wide Web . É a quinta e mais recente versão principal do HTML</p>
+                            </div>
+                        </div>
+                    </div>
 
-                $('nav.menu-mobile i').click(function() {
-                    var el = $(this).parent().find('ul')
-                    if (el.is(':visible') == false) {
-                        el.fadeIn();
-                    } else {
-                        el.fadeOut();
-                    }
+                    <div class="box-tols-single">
+                        <div class="box-tols-wraper">
+                            <h2>CSS3</h2>
+                            <div class="logo-tols">
+                                <i style="color: rgb(80, 134, 214);" class="fa fa-css3" aria-hidden="true"></i>
+                            </div>
+                            <div class="disc-tols">
+                                <p><i class="fa fa-check-square"></i> HTML5 é uma linguagem de marcação usada para estruturar e apresentar conteúdo na World Wide Web . É a quinta e mais recente versão principal do HTML</p>
+                            </div>
+                        </div>
+                    </div>
 
-                })
+                    <div class="box-tols-single">
+                        <div class="box-tols-wraper">
+                            <h2>Javascript</h2>
+                            <div class="logo-tols">
+                                <i style="color: green;" class="fab fa-js-square"></i>
+                            </div>
+                            <div class="disc-tols">
+                                <p><i class="fa fa-check-square"></i> HTML5 é uma linguagem de marcação usada para estruturar e apresentar conteúdo na World Wide Web . É a quinta e mais recente versão principal do HTML</p>
+                            </div>
+                        </div>
+                    </div>
 
+                </div>
+    </div>
+    </section>
+    </section>
+    <!--tols-->
+    <!--terminado a parte de tecnologia-->
+    <script src=" https://code.jquery.com/jquery-3.5.1.js " integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin=" anonymous ">
+    </script>
+    <script src="https://kit.fontawesome.com/9627149ebf.js" crossorigin="anonymous"></script>
+    <script type="text/javascript ">
+        $(function() {
 
+            $('nav.menu-mobile i').click(function() {
+                var el = $(this).parent().find('ul')
+                if (el.is(':visible') == false) {
+                    el.fadeIn();
+                } else {
+                    el.fadeOut();
+                }
 
             })
-        </script>
+
+
+
+        })
+    </script>
 </body>
 
 </html>

@@ -1,148 +1,236 @@
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: "Open Sans";
-        }
-        
-        html,
-        body {
-            height: 100%;
-        }
-        
-        .clear {
-            clear: both;
-        }
-        /**Estilizando a header do site**/
-        
-        .container {
-            width: 100%;
-            max-width: 1280px;
-            margin: 0 auto;
-        }
-        
-        .logo img {
-            position: relative;
-            top: -14px;
-            float: left;
-            width: 150px;
-            cursor: pointer;
-        }
-        
-        header {
-            padding: 10px 0;
-            height: 50px;
-            border-bottom: 2px solid #A64DFF;
-        }
-        
-        nav.menu-desktop {
-            float: right;
-        }
-        
-        nav.menu-desktop ul {
-            list-style-type: none;
-        }
-        
-        nav.menu-desktop li {
-            float: left;
-            padding: 2% 20px;
-        }
-        
-        nav.menu-desktop a {
-            text-decoration: none;
-            color: #A64DFF;
-            font-size: 20px;
-        }
-        
-        nav.menu-desktop a:hover {
-            background: #A64DFF;
-            color: white;
-        }
-        
-        nav.menu-mobile {
-            display: none;
-            float: right;
-        }
-        
-        nav.menu-mobile ul {
-            z-index: 2;
-            display: none;
-            position: absolute;
-            left: 0;
-            top: 82px;
-            width: 100%;
-            background: #A64DFF;
-            list-style-type: none;
-        }
-        
-        nav.menu-mobile li {
-            font-weight: lighter;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-            text-align: center;
-            padding: 8px 0;
-        }
-        
-        nav.menu-mobile a {
-            display: block;
-            font-size: 18px;
-            text-decoration: none;
-            color: white;
-        }
-        
-        nav.menu-mobile>i {
-            position: relative;
-            top: 10px;
-            padding-right: 15px;
-            font-size: 25px;
-            color: black;
-            cursor: pointer;
-        }
-        /****/
-        /**Estilizando o banner**/
-        
-        section.bg-top {
-            width: 100%;
-            min-height: 400px;
-            background-image: url('../imagens/bg.jpg');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            position: relative;
-        }
-        
-        .fix-zindex {
-            position: relative;
-            z-index: 2;
-        }
-        
-        .overlay {
-            z-index: 1;
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            left: 0;
-            top: 0;
-            background: rgba(100, 100, 100, 0.7);
-        }
-        
-        .texto-bg {
-            width: 600px;
-            display: inline-block;
-            color: white;
-            padding: 100px 50px;
-        }
-        
-        .texto-bg h2 {
-            margin-bottom: 10px;
-        }
-        /****/
-        /****/
-        
-        @media screen and (max-width: 768px) {
-            nav.menu-mobile {
-                display: block;
-            }
-            nav.menu-desktop {
-                display: none;
-            }
-        }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans";
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.clear {
+    clear: both;
+}
+
+
+/**Estilizando a header do site**/
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.logo img {
+    position: relative;
+    top: -14px;
+    float: left;
+    width: 150px;
+    cursor: pointer;
+}
+
+header {
+    padding: 10px 0;
+    height: 50px;
+    border-bottom: 2px solid #A64DFF;
+}
+
+nav.menu-desktop {
+    float: right;
+}
+
+nav.menu-desktop ul {
+    list-style-type: none;
+}
+
+nav.menu-desktop li {
+    float: left;
+    padding: 2% 20px;
+}
+
+nav.menu-desktop a {
+    text-decoration: none;
+    color: #A64DFF;
+    font-size: 20px;
+}
+
+nav.menu-desktop a:hover {
+    background: #A64DFF;
+    color: white;
+}
+
+nav.menu-mobile a:hover {
+    background: #A64DFF;
+    color: white;
+}
+
+nav.menu-mobile {
+    display: none;
+    float: right;
+}
+
+nav.menu-mobile ul {
+    z-index: 2;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 82px;
+    width: 100%;
+    background: #A64DFF;
+    list-style-type: none;
+}
+
+nav.menu-mobile li {
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    text-align: center;
+    padding: 8px 0;
+}
+
+nav.menu-mobile a {
+    display: block;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+}
+
+nav.menu-mobile>i {
+    position: relative;
+    top: 10px;
+    padding-right: 15px;
+    font-size: 25px;
+    color: black;
+    cursor: pointer;
+}
+
+
+/****/
+
+
+/**Estilizando o banner**/
+
+section.bg-top {
+    width: 100%;
+    min-height: 400px;
+    background-image: url('../imagens/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.fix-zindex {
+    position: relative;
+    z-index: 3;
+}
+
+.overlay {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(100, 100, 100, 0.7);
+}
+
+.texto-bg {
+    width: 600px;
+    display: inline-block;
+    color: white;
+    padding: 100px 50px;
+}
+
+.texto-bg h2 {
+    margin-bottom: 10px;
+}
+
+
+/****/
+
+
+/**Estilizando sessão de tecnologias**/
+
+.title-tols {
+    width: 100%;
+    text-align: center;
+    padding: 10px 2%;
+    background: #A64DFF;
+}
+
+.title-tols h2 {
+    display: inline-block;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.box-tols {
+    padding: 40px 0;
+}
+
+.box-tols>.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-tols-single {
+    width: 33.3%;
+    padding: 0 40px;
+}
+
+.box-tols-wraper {
+    width: 100%;
+    -webkit-box-shadow: 11px 11px 7px -4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 11px 11px 7px -4px rgba(0, 0, 0, 0.75);
+    box-shadow: 11px 11px 7px -4px rgba(0, 0, 0, 0.75);
+    border: 1px solid #ccc;
+    min-height: 300px;
+}
+
+.box-tols-single h2 {
+    background: #555;
+    color: white;
+    text-align: center;
+    padding: 3px;
+    font-weight: lighter;
+}
+
+.logo-tols i {
+    position: relative;
+    top: 10px;
+    left: 130px;
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+
+.desc-tols {
+    padding: 8px 0 15px 0;
+}
+
+.box-tols-single p {
+    margin-left: 25px;
+    color: #777777;
+    font-size: 17px;
+    margin-top: 8px;
+}
+
+@media screen and (max-width: 768px) {
+    nav.menu-mobile {
+        display: block;
+    }
+    nav.menu-desktop {
+        display: none;
+    }
+    .texto-bg {
+        margin-top: 80px;
+    }
+    .logo-tols i {
+        position: relative;
+        top: 10px;
+        left: 60px;
+        padding-bottom: 10px;
+    }
+}
