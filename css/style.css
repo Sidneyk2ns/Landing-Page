@@ -234,4 +234,17 @@ section.bg-top {
         left: 60px;
         padding-bottom: 10px;
     }
+    .box-tols-single {
+        width: 100%;
+        margin-top: 20px;
+        padding: 0 100px;
+    }
+    .logo-tols i {
+        left: 220px;
+    }
+    .box-tols-single p {
+        margin-left: 25px;
+        margin-top: 8px;
+        padding: 0 2%;
+    }
 }
