@@ -23,6 +23,7 @@ body {
 header {
     padding: 10px;
     height: 70px;
+    background-color: #777;
 }
 
 .logo img {
@@ -53,7 +54,7 @@ nav.menu-mobile ul {
     width: 100%;
     left: 0;
     top: 95px;
-    border-bottom: 4px solid #EB2D2D;
+    border-bottom: 4px solid #13e8ef;
     z-index: 999;
     position: absolute;
     text-align: center;
@@ -63,11 +64,10 @@ nav.menu-mobile ul {
 nav.menu-mobile li {
     font-size: 23px;
     padding: 20px 0px;
-    font-style: italic;
 }
 
 nav.menu-mobile li a {
-    color: black;
+    color: #13e8ef;
     text-decoration: none;
 }
 
@@ -83,7 +83,7 @@ header nav.menu-desktop ul li {
 }
 
 header nav.menu-desktop a {
-    color: black;
+    color: #13e8ef;
     text-decoration: none;
 }
 
@@ -93,40 +93,24 @@ header nav.menu-desktop a {
 
 /**Estilizando o banner**/
 
-section.bg-top {
+section.bg {
     width: 100%;
     min-height: 400px;
     background-image: url('../imagens/bg.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    position: relative;
-}
-
-.fix-zindex {
-    position: relative;
-    z-index: 3;
-}
-
-.overlay {
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    background: rgba(120, 120, 120, 0.8);
 }
 
 .texto-bg {
-    width: 600px;
+    width: 100%;
     display: inline-block;
-    color: white;
     padding: 100px 50px;
 }
 
 .texto-bg h2 {
-    margin-bottom: 10px;
+    text-align: center;
+    color: rgb(220, 220, 220);
 }
 
 
@@ -139,12 +123,12 @@ section.bg-top {
     width: 100%;
     text-align: center;
     padding: 10px 2%;
-    background: #1ccde8;
+    background-color: #777;
 }
 
 .title-tols h2 {
     display: inline-block;
-    color: white;
+    color: #13e8ef;
     text-transform: uppercase;
     font-size: 20px;
 }
@@ -170,22 +154,25 @@ section.bg-top {
     box-shadow: 11px 11px 7px -4px rgba(0, 0, 0, 0.75);
     border: 1px solid #ccc;
     min-height: 300px;
+    background-color: rgb(230, 230, 230)
 }
 
 .box-tols-single h2 {
     background: #555;
-    color: white;
+    color: #13e8ef;
     text-align: center;
     padding: 3px;
     font-weight: lighter;
 }
 
+.logo-tols {
+    margin: 2% auto;
+}
+
 .logo-tols i {
-    position: relative;
-    top: 10px;
-    left: 130px;
-    padding-bottom: 10px;
-    font-size: 30px;
+    font-size: 40px;
+    text-align: center;
+    padding-left: 45%;
 }
 
 .desc-tols {
@@ -194,7 +181,7 @@ section.bg-top {
 
 .box-tols-single p {
     margin-left: 25px;
-    color: #777777;
+    color: #777;
     font-size: 17px;
     margin-top: 8px;
     padding: 0 2%;
@@ -208,26 +195,14 @@ section.bg-top {
     nav.menu-desktop {
         display: none;
     }
+    .overlay {
+        display: none;
+    }
     .texto-bg {
         margin-top: 80px;
     }
-    .logo-tols i {
-        position: relative;
-        top: 10px;
-        left: 60px;
-        padding-bottom: 10px;
-    }
     .box-tols-single {
         width: 100%;
-        margin-top: 20px;
-        padding: 0 100px;
-    }
-    .logo-tols i {
-        left: 200px;
-    }
-    .box-tols-single p {
-        margin-left: 25px;
-        margin-top: 8px;
-        padding: 0 2%;
+        margin: 10px auto;
     }
 }
