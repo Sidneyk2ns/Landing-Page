@@ -17,7 +17,7 @@
     <header>
         <div class="container">
             <div class="logo">
-                <img src="imagens/logo.png">
+                <a target="_blank" href="imagens/logo.png"><img src="imagens/logo.png"></a>
             </div>
             <!--logo-->
             <div class="clear"></div>
@@ -101,15 +101,39 @@
     <!--tols-->
     <!--terminado a parte de tecnologia-->
     <!--iniciando form contato-->
-    <section>
-        <div class="container">
-            <form>
-                <input type="text" placeholder="Nome*">
-                <input type="email" placeholder="Nome*">
-                <input type="text" placeholder="Nome*">
-                <textarea></textarea>
-            </form>
+    <section class="contato">
+
+        <div class="titulo-contato">
+            <h2>Contato</h2>
         </div>
+        <form>
+            <div class="input-wraper w100">
+                <input placeholder="Nome*" required type="text" name="nome" />
+            </div>
+            <!--input-wraper w100-->
+
+            <div class="input-wraper w50">
+                <input placeholder="E-mail*" required type="email" name="email" />
+            </div>
+            <!--input-wraper w50-->
+
+            <div class="input-wraper w50">
+                <input placeholder="Telefone*" required type="text" name="telefone" />
+            </div>
+            <!--input-wraper w50-->
+
+            <div class="input-wraper w100">
+                <textarea placeholder="Mensagem*" required></textarea>
+            </div>
+            <!--input-wraper w100-->
+
+            <div class="input-wraper w100">
+                <input class="btn1" value="Enviar" type="submit" name="acao">
+            </div>
+            <!--input-wraper w100-->
+            <div class="clear"></div>
+        </form>
+
     </section>
     <script src=" https://code.jquery.com/jquery-3.5.1.js " integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin=" anonymous ">
     </script>
