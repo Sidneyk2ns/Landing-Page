@@ -1,286 +1,292 @@
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: "Oswald ", sans-serif;
-    }
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Oswald ", sans-serif;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+.container {
+	width: 100%;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+.clear {
+	clear: both;
+}
+
+header {
+	padding: 10px;
+	height: 70px;
+	background-color: #777;
+}
+
+.logo img {
+	position: absolute;
+	width: 120px;
+	height: 40px;
+}
+
+header nav.menu-desktop {
+	float: right;
+	position: relative;
+	top: 10px;
+}
+
+nav.menu-mobile {
+	margin-top: 40px;
+	float: right;
+	width: 32px;
+	height: 32px;
+	background-size: 100% 100%;
+	cursor: pointer;
+	background-image: url('../imagens/icon_menu.png');
+	display: none;
+}
+
+nav.menu-mobile ul {
+	display: none;
+	width: 100%;
+	left: 0;
+	top: 95px;
+	z-index: 999;
+	position: absolute;
+	text-align: center;
+	background-color: rgb(220, 220, 220)
+}
+
+nav.menu-mobile li {
+	font-size: 23px;
+	padding: 20px 0px;
+	border-bottom: 1px solid #444;
+}
+
+nav.menu-mobile li a:hover {
+	border-bottom: 1px solid #ccc;
+}
+
+nav.menu-mobile li a {
+	color: #13e8ef;
+	text-decoration: none;
+}
+
+header nav.menu-desktop ul {
+	list-style-type: none;
+}
+
+header nav.menu-desktop ul li {
+	float: left;
+	font-size: 23px;
+	padding: 0 30px;
+}
+
+header nav.menu-desktop a {
+	color: #13e8ef;
+	text-decoration: none;
+}
+
+nav.menu-desktop li a:hover {
+	color: #489596;
+	border-bottom: 1px solid #ccc;
+}
+/****/
+/**Estilizando o banner**/
+
+section.bg {
+	width: 100%;
+	min-height: 400px;
+	background-image: url('../imagens/bg.jpg');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.texto-bg {
+	width: 100%;
+	display: inline-block;
+	padding: 100px 50px;
+}
+
+.texto-bg h2 {
+	text-align: center;
+	color: rgb(220, 220, 220);
+}
+/****/
+/**Estilizando sessão de tecnologias**/
+
+.title-tols {
+	width: 100%;
+	text-align: center;
+	padding: 10px 2%;
+	background-color: #777;
+}
+
+.title-tols h2 {
+	display: inline-block;
+	color: #13e8ef;
+	text-transform: uppercase;
+	font-size: 20px;
+}
+
+.box-tols {
+	padding: 40px 0;
+	margin: 50px 0;
+}
+
+.box-tols>.container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.box-tols-single {
+	width: 33.3%;
+	padding: 0 40px;
+}
+
+.box-tols-wraper {
+	width: 100%;
+	-webkit-box-shadow: 11px 11px 7px -4px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 11px 11px 7px -4px rgba(0, 0, 0, 0.75);
+	box-shadow: 11px 11px 7px -4px rgba(0, 0, 0, 0.75);
+	border: 1px solid #ccc;
+	min-height: 300px;
+	background-color: rgb(230, 230, 230)
+}
+
+.box-tols-single h2 {
+	background: #555;
+	color: #13e8ef;
+	text-align: center;
+	padding: 3px;
+}
+
+.logo-tols {
+	margin: 2% auto;
+}
+
+.logo-tols i {
+	font-size: 40px;
+	text-align: center;
+	padding-left: 45%;
+}
+
+.desc-tols {
+	padding: 8px 0 15px 0;
+}
+
+.box-tols-single p {
+	margin-left: 25px;
+	color: #777;
+	font-size: 17px;
+	margin-top: 8px;
+	padding: 10px;
+}
+/**Estilizando o form contato**/
+
+section.contato {
+	padding: 30px 0;
+}
+
+section.titulo-contato {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.titulo-contato h2 {
+	color: #13e8ef;
+	background-color: #777;
+	text-transform: uppercase;
+	font-size: 20px;
+	text-align: center;
+}
+
+form {
+	max-width: 600px;
+	margin: 30px auto;
+}
+
+section.contato .input-wraper {
+	float: left;
+	padding: 10px;
+	margin-top: 7px;
+}
+
+section.contato input[type=text],
+section.contato input[type=email] {
+	width: 100%;
+	border: 1px solid #ccc;
+	height: 32px;
+	font-size: 16px;
+	line-height: 16px;
+	padding-left: 10px;
+	border-radius: 6px;
+}
+
+section.contato textarea {
+	font-size: 16px;
+	width: 100%;
+	border: 1px solid #ccc;
+	height: 140px;
+	padding: 8px;
+	resize: none;
+	border-radius: 8px;
+}
+
+section.contato form .input-wraper:nth-of-type(5) {
+	text-align: center;
+}
+
+section.contato input[type=submit] {
+	cursor: pointer;
+	display: inline-block;
+	color: #13e8ef;
+	text-transform: uppercase;
+	font-size: 16px;
+	text-align: center;
+	padding: 2% 10px;
+	background: #555;
+	border-radius: 8px;
+}
+
+.w100 {
+	width: 100%;
+}
+
+.w50 {
+	width: 50%;
+}
+/****/
+
+footer{
+	width: 100%;
+	height: 90px;
+	background: #555;
+}
     
-    html,
-    body {
-        height: 100%;
-    }
-    
-    .container {
-        width: 100%;
-        max-width: 1400px;
-        margin: 0 auto;
-    }
-    
-    .clear {
-        clear: both;
-    }
-    
-    header {
-        padding: 10px;
-        height: 70px;
-        background-color: #777;
-    }
-    
-    .logo img {
-        position: absolute;
-        width: 120px;
-        height: 40px;
-    }
-    
-    header nav.menu-desktop {
-        float: right;
-        position: relative;
-        top: 10px;
-    }
-    
-    nav.menu-mobile {
-        margin-top: 40px;
-        float: right;
-        width: 32px;
-        height: 32px;
-        background-size: 100% 100%;
-        cursor: pointer;
-        background-image: url('../imagens/icon_menu.png');
-        display: none;
-    }
-    
-    nav.menu-mobile ul {
-        display: none;
-        width: 100%;
-        left: 0;
-        top: 95px;
-        z-index: 999;
-        position: absolute;
-        text-align: center;
-        background-color: rgb(220, 220, 220)
-    }
-    
-    nav.menu-mobile li {
-        font-size: 23px;
-        padding: 20px 0px;
-        border-bottom: 1px solid #444;
-    }
-    
-    nav.menu-mobile li a:hover {
-        border-bottom: 1px solid #ccc;
-    }
-    
-    nav.menu-mobile li a {
-        color: #13e8ef;
-        text-decoration: none;
-    }
-    
-    header nav.menu-desktop ul {
-        list-style-type: none;
-    }
-    
-    header nav.menu-desktop ul li {
-        float: left;
-        font-size: 23px;
-        padding: 0 30px;
-    }
-    
-    header nav.menu-desktop a {
-        color: #13e8ef;
-        text-decoration: none;
-    }
-    
-    nav.menu-desktop li a:hover {
-        color: #489596;
-        border-bottom: 1px solid #ccc;
-    }
-    /****/
-    /**Estilizando o banner**/
-    
-    section.bg {
-        width: 100%;
-        min-height: 400px;
-        background-image: url('../imagens/bg.jpg');
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-    }
-    
-    .texto-bg {
-        width: 100%;
-        display: inline-block;
-        padding: 100px 50px;
-    }
-    
-    .texto-bg h2 {
-        text-align: center;
-        color: rgb(220, 220, 220);
-    }
-    /****/
-    /**Estilizando sessão de tecnologias**/
-    
-    .title-tols {
-        width: 100%;
-        text-align: center;
-        padding: 10px 2%;
-        background-color: #777;
-    }
-    
-    .title-tols h2 {
-        display: inline-block;
-        color: #13e8ef;
-        text-transform: uppercase;
-        font-size: 20px;
-    }
-    
-    .box-tols {
-        padding: 40px 0;
-        margin: 50px 0;
-    }
-    
-    .box-tols>.container {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    
-    .box-tols-single {
-        width: 33.3%;
-        padding: 0 40px;
-    }
-    
-    .box-tols-wraper {
-        width: 100%;
-        -webkit-box-shadow: 11px 11px 7px -4px rgba(0, 0, 0, 0.75);
-        -moz-box-shadow: 11px 11px 7px -4px rgba(0, 0, 0, 0.75);
-        box-shadow: 11px 11px 7px -4px rgba(0, 0, 0, 0.75);
-        border: 1px solid #ccc;
-        min-height: 300px;
-        background-color: rgb(230, 230, 230)
-    }
-    
-    .box-tols-single h2 {
-        background: #555;
-        color: #13e8ef;
-        text-align: center;
-        padding: 3px;
-    }
-    
-    .logo-tols {
-        margin: 2% auto;
-    }
-    
-    .logo-tols i {
-        font-size: 40px;
-        text-align: center;
-        padding-left: 45%;
-    }
-    
-    .desc-tols {
-        padding: 8px 0 15px 0;
-    }
-    
-    .box-tols-single p {
-        margin-left: 25px;
-        color: #777;
-        font-size: 17px;
-        margin-top: 8px;
-        padding: 10px;
-    }
-    /**Estilizando o form contato**/
-    
-    section.contato {
-        padding: 30px 0;
-    }
-    
-    section.titulo-contato {
-        width: 100%;
-        margin: 0 auto;
-    }
-    
-    .titulo-contato h2 {
-        color: #13e8ef;
-        background-color: #777;
-        text-transform: uppercase;
-        font-size: 20px;
-        text-align: center;
-    }
-    
-    form {
-        max-width: 600px;
-        margin: 30px auto;
-    }
-    
-    section.contato .input-wraper {
-        float: left;
-        padding: 10px;
-        margin-top: 7px;
-    }
-    
-    section.contato input[type=text],
-    section.contato input[type=email] {
-        width: 100%;
-        border: 1px solid #ccc;
-        height: 32px;
-        font-size: 16px;
-        line-height: 16px;
-        padding-left: 10px;
-        border-radius: 6px;
-    }
-    
-    section.contato textarea {
-        font-size: 16px;
-        width: 100%;
-        border: 1px solid #ccc;
-        height: 140px;
-        padding: 8px;
-        resize: none;
-        border-radius: 8px;
-    }
-    
-    section.contato form .input-wraper:nth-of-type(5) {
-        text-align: center;
-    }
-    
-    section.contato input[type=submit] {
-        cursor: pointer;
-        display: inline-block;
-        color: #13e8ef;
-        text-transform: uppercase;
-        font-size: 16px;
-        text-align: center;
-        padding: 2% 10px;
-        background: #555;
-        border-radius: 8px;
-    }
-    
-    .w100 {
-        width: 100%;
-    }
-    
-    .w50 {
-        width: 50%;
-    }
-    /****/
-    
-    @media screen and (max-width: 768px) {
-        nav.menu-mobile {
-            display: block;
-            margin-top: 10px;
-        }
-        nav.menu-desktop {
-            display: none;
-        }
-        .overlay {
-            display: none;
-        }
-        .texto-bg {
-            margin-top: 80px;
-        }
-        .box-tols-single {
-            width: 100%;
-            margin: 10px auto;
-        }
-        .w50 {
-            width: 100%;
-        }
-    }
+@media screen and (max-width: 768px) {
+	nav.menu-mobile {
+		display: block;
+		margin-top: 10px;
+	}
+	nav.menu-desktop {
+		display: none;
+	}
+	.overlay {
+		display: none;
+	}
+	.texto-bg {
+		margin-top: 80px;
+	}
+	.box-tols-single {
+		width: 100%;
+		margin: 10px auto;
+	}
+	.w50 {
+		width: 100%;
+	}
+}
